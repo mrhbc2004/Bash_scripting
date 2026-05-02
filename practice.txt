@@ -25,3 +25,11 @@ Grep is powerful.
 Sed is a stream editor.
 Awk is great for reporting.
 Linux is awesome.
+
+# Duplicates
+Name-> John
+Name-> Alice
+Name-> Alex
+Name-> John
+Name-> Bob
+Name-> Bob

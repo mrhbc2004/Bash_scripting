@@ -1,0 +1,27 @@
+# Employee Records
+ID: 101 | Name: Alice Johnson | Dept: HR | Salary: 50000 | Location: Bangalore
+ID: 102 | Name: Bob Smith | Dept: IT | Salary: 70000 | Location: Hyderabad
+ID: 103 | Name: Charlie Brown | Dept: Finance | Salary: 65000 | Location: Pune
+ID: 104 | Name: David Wilson | Dept: IT | Salary: 72000 | Location: Chennai
+ID: 105 | Name: Eva Adams | Dept: HR | Salary: 52000 | Location: Bangalore
+
+# Server Logs
+2024-01-01 10:00:01 INFO Server started
+2024-01-01 10:05:23 ERROR Connection failed
+2024-01-01 10:07:45 WARNING Disk space low
+2024-01-01 10:10:12 INFO User login successful
+2024-01-01 10:15:00 ERROR Timeout occurred
+
+# Emails
+alice@example.com
+bob.smith@company.org
+charlie123@gmail.com
+invalid-email@
+test.user@domain.co.in
+
+# Random Text
+The quick brown fox jumps over the lazy dog.
+Grep is powerful.
+Sed is a stream editor.
+Awk is great for reporting.
+Linux is awesome.

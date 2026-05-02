@@ -176,4 +176,18 @@ echo "apple banana mango" | tr ' ' ','
         apple,banana,mango
 
     It transforms spaces to commas
-[1]   
+
+# paste - merge columns
+```bash
+grep "ID:" practice.txt | cut -d '|' -f2 practice.txt > names.txt
+grep "ID:" practice.txt | cut -d '|' -f3 practice.txt > salary.txt
+paste names.txt salary.txt
+```
+    output:
+        Name: Alice Johnson     Dept: HR 
+        Name: Bob Smith         Dept: IT 
+        Name: Charlie Brown     Dept: Finance 
+        Name: David Wilson      Dept: IT 
+        Name: Eva Adams         Dept: HR
+    
+    It combines two outputs 

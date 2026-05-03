@@ -155,3 +155,15 @@ grep -A 2 "ERROR" practice.txt | grep -v '^--$'
 ```
     Prints the same output as above. The '|' (pipe) operator forwards the output of first command as input to second command
 
+## Quiet mode
+```bash
+grep -q "ERROR" practice.txt
+```
+    output:
+        <It doesn't print anything as this is quiet mode>
+        <It is extensively used in conditional statements in scripts>
+        <If the match is found then exit status is 0>
+        <If the match is not found then exit status is 1>
+        <If any error is observed then exit status is 2>
+
+> WARNING: It stops searching as soon as it finds the first match

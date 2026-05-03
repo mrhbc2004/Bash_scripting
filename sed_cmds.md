@@ -134,3 +134,43 @@ sed 's/Server Logs/REPLACED LINE/' practice.txt
         2024-01-01 10:07:45 WARNING Disk space low
         2024-01-01 10:10:12 INFO User login successful
         2024-01-01 10:15:00 ERROR Timeout occurred
+
+## In place Editing
+> WARNING: this modifies the file
+```bash
+sed -i 's/ERROR/CRITICAL/g' practice.txt 
+```
+    output:
+        <It replaces ERROR with CRITICAL in the same file>
+
+> If you want backup file then do this
+```bash
+sed -i.bak 's/ERROR/CRITICAL/g' practice.txt
+```
+    output:
+        <It replaces ERROR with CRITICAL in the original file and creates a backup file with practice.txt.bak>
+
+## Mulitple commands
+> using -e 
+```bash
+sed -e 's/ERROR/CRITICAL/g' -e 's/WARNING/CAUTION/g' practice.txt
+```
+> using ;
+```bash
+sed 's/ERROR/CRITICAL/g; s/WARNING/CAUTION/g' practice.txt
+```
+    output:
+        <It replaces ERROR with CRITICAL and WARNING with CAUTION in the whole file>
+
+## print odd lines
+```bash 
+sed -n '1~2p' practice.txt
+```
+    output:
+        <It prints only odd lines from the content>
+## print even lines
+```bash
+sed -n '2~2p' practice.txt
+```
+    output:
+        <It prints only even lines from the content>

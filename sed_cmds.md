@@ -174,3 +174,16 @@ sed -n '2~2p' practice.txt
 ```
     output:
         <It prints only even lines from the content>
+
+## Capture Groups and backreferences
+```bash
+sed 's/Name: \([^|]*\) | Dept: \([^|]*\)/ Dept: \2 | Name: \1/' practice.txt
+```
+    output:
+        # Employee Records
+        ID: 101 |  Dept: HR  | Name: Alice Johnson| Salary: 50000 | Location: Bangalore
+        ID: 102 |  Dept: IT  | Name: Bob Smith| Salary: 70000 | Location: Hyderabad
+        ID: 103 |  Dept: Finance  | Name: Charlie Brown| Salary: 65000 | Location: Pune
+        ID: 104 |  Dept: IT  | Name: David Wilson| Salary: 72000 | Location: Chennai
+        ID: 105 |  Dept: HR  | Name: Eva Adams| Salary: 52000 | Location: Bangalore
+    It reverses the values and columns of Dept and Name
